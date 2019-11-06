@@ -44,9 +44,21 @@ export default {
       default: "auto",
       description: "Define height"
     },
+    "--smallheight": {
+      default: "auto",
+      description: "Define height for narrow layout"
+    },
     "--cols": {
       default: "3",
       description: "Define columns"
+    },
+    "--smallcols": {
+      default: "2",
+      description: "Define columns for narrow layout"
+    },
+    "--tinycols": {
+      default: "1",
+      description: "Define columns for narrow layout"
     },
     "--rows": {
       default: "auto",
@@ -55,7 +67,7 @@ export default {
   },
   template: `
   <div  
-    v-responsive="{ 'f-wall--small' : el => el.width <= 800, 'f-wall--tiny' : el => el.width <= 600 }"
+    v-responsive="{ 'f-wall--small' : el => el.width <= 800, 'f-wall--tiny' : el => el.width <= 400 }"
     class="f-wall"
    >
   <!-- <div style="display:grid;" v-responsive="{ 'f-wall__small' : el => el.width <= 800 }"
@@ -72,7 +84,12 @@ export default {
       grid-template-rows: repeat(var(--rows), 1fr);
     }
     .f-wall--small {
-      grid-template-columns: repeat(1, 1fr);
+      min-height: var(--smallheight);
+      grid-template-columns: repeat(var(--smallcols), 1fr);
+    }
+    .f-wall--tiny {
+      min-height: var(--tinyheight);
+      grid-template-columns: repeat(var(--tinycols), 1fr);
     }
   `
 }

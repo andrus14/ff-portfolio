@@ -4,14 +4,15 @@ import { fachwerk } from "https://designstem.github.io/fachwerk/fachwerk.js";
 
 import FPortfolioWall from "./components/FPortfolioWall.js";
 import FPortfolioTile from "./components/FPortfolioTile.js";
-
+import DirtyStyleOverriderHack from "./components/DirtyStyleOverriderHack.js"
 
 
 fachwerk({
-  title: "Portfolio",
+  title: "Oliver Maaker",
   components: {
     FPortfolioTile: FPortfolioTile,
-    FPortfolioWall: FPortfolioWall
+    FPortfolioWall: FPortfolioWall,
+    csshack: DirtyStyleOverriderHack,
   },
   edit: "none",
   pager: "none",

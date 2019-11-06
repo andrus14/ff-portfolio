@@ -56,7 +56,7 @@ export default {
       <div :style="{'background-image': 'url('+image+')'}" class="f-wall__tile-bg"></div>
       <div class="f-wall__tile-overlay" :style="{'opacity': 'var(--tint)'}"></div>
       <div class="f-wall__tile-content">
-        <h4 class="f-wall__tile-content__title" :style="{'background-color': important ? 'var(--red)' : 'none'}">{{ title }}</h4>
+        <h4 class="f-wall__tile-content__title" :style="{'background-color': important ? 'var(--important)' : 'var(--wall-tile-title-background)'}">{{ title }}</h4>
       </div>
     </div>
   </div>
@@ -66,7 +66,7 @@ export default {
       grid-area: span var(--spanrows) / span var(--spancols);
     }
     .f-wall__tile--small {
-      grid-area: span var(--spanrows) / span 1;
+      grid-area: span 1 / span 1;
     }
 
     .f-wall__tile-wrapper {
@@ -94,11 +94,11 @@ export default {
     .f-wall__tile-overlay {
       position:absolute; 
       width:100%; height:100%; 
-      background:var(--darkblue); 
+      background:var(--wall-tile-overlay-color); 
       mix-blend-mode:multiply;
     }
     .f-wall__tile-content {
-      padding: 2vmin;
+      // padding: 2vmin;
     }
     .f-wall__tile-content__title{
       text-shadow: 0 0.1ch 0.1ch hsla(0, 0%, 0%, 0.35);
