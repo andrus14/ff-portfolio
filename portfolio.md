@@ -9,7 +9,7 @@
 
   # Mott Gliver-Waarnook
   
-  A man, designer, mother, philosopher and <a href="https://external-preview.redd.it/dm-HMsx1ar3x-VnaGZ3nn_GH_evDqQhCZOiBj-gIpZ4.jpg?auto=webp&s=9b6a2708cc58f8bab50c85da8ea6f08ad7488bde" target="_blank">salmon fish</a> from the lake of Zott!<br>This is my work. You must like it. Bla-bla-bla.
+  This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank">Fachwerk</a> framework as possible portfolio platform.
 
 </center>
 
@@ -74,7 +74,7 @@
 
   ## Mott Gliver-Waarnook
   
-  A man, designer, mother, philosopher and <a href="https://external-preview.redd.it/dm-HMsx1ar3x-VnaGZ3nn_GH_evDqQhCZOiBj-gIpZ4.jpg?auto=webp&s=9b6a2708cc58f8bab50c85da8ea6f08ad7488bde" target="_blank">salmon fish</a> from the lake of Zott!<br>This is my work. You must like it. Bla-bla-bla.
+  This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank">Fachwerk</a> framework as possible portfolio platform.
 
 </center>
 
@@ -133,7 +133,7 @@
 
   ## Mott Gliver-Waarnook
   
-  A man, designer, mother, philosopher and <a href="https://external-preview.redd.it/dm-HMsx1ar3x-VnaGZ3nn_GH_evDqQhCZOiBj-gIpZ4.jpg?auto=webp&s=9b6a2708cc58f8bab50c85da8ea6f08ad7488bde" target="_blank">salmon fish</a> from the lake of Zott!<br>This is my work. You must like it. Bla-bla-bla.
+  This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank">Fachwerk</a> framework as possible portfolio platform.
 
 </section>
 
@@ -213,7 +213,7 @@
 
   ## ~Mott Gliver-Waarnook~
       
-  > ~A man, designer, mother, philosopher and <a href="https://external-preview.redd.it/dm-HMsx1ar3x-VnaGZ3nn_GH_evDqQhCZOiBj-gIpZ4.jpg?auto=webp&s=9b6a2708cc58f8bab50c85da8ea6f08ad7488bde" target="_blank">salmon fish</a> from the lake of Zott!<br>This is my work. You must like it. Bla-bla-bla.~
+  > ~This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank">Fachwerk</a> framework as possible portfolio platform.~
 
   </section>
   <f-portfolio-tile 
