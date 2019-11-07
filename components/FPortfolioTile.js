@@ -1,24 +1,35 @@
 import {Css, goto} from "https://designstem.github.io/fachwerk/fachwerk.js";
 import { ResponsiveDirective } from "../localutils.js";
+import { default as FModal } from "../components/FModal.js";
 
 export default {
   props: {
     image:      { default: "./images/example.jpg", type: String, description: "url to image" },
     title:      { default: "Title", type: String, description: "project title"  },
-    description: {default:'', type:String, description: "short description"},
-    // tint:       { default: 0.33, type:[String, Number], description: "darkened overlay" },
+    description: {default:"", type:String, description: "short description"},
     dark:       { default: false, type: Boolean, description: "todo"},
     important:  { default: false, type: Boolean, description: "increases title"},
-    // cols:       { default: '1', type:[String, Number], description: "defines number of columns this tile takes" },
-    // rows:       { default: '1', type:[String, Number], description: "defines number of rows this tile takes" },
-    target:     { default: '', type:String, description: "Link to content section" },
+    target:     { default: "", type:String, description: "Defines, what to show if clicked. Can open a modal to show bigger image or navigate to another section/project." },
   },
-  // data: () => ({
-  //   foo: "bar"
-  // }),
+  data: () => ({
+    isImage: false
+  }),
+  components: {
+    FModal: FModal,
+  },
   mixins: [Css],
   directives: {
     responsive: ResponsiveDirective
+  },
+  beforeMount(){
+    if( 
+      this.target.includes(".jpg") || 
+      this.target.includes(".png") || 
+      this.target.includes(".gif") || 
+      this.target.includes(".svg") 
+    ){
+      this.isImage = true;
+    }
   },
   methods: {goto},
   // computed: {
@@ -57,6 +68,10 @@ export default {
       <div class="f-wall__tile-overlay" :style="{'opacity': 'var(--tint)'}"></div>
       <div class="f-wall__tile-content">
         <h4 class="f-wall__tile-content__title" :style="{'background-color': important ? 'var(--important)' : 'var(--wall-tile-title-background)'}">{{ title }}</h4>
+
+        <f-modal v-if="isImage" :src="image">
+          <a style="position:absolute; z-index:5; width:100%; height:100%; background:hsla(30,0%,0%,0)">&nbsp;</a>
+        </f-modal>
       </div>
     </div>
   </div>
@@ -99,8 +114,14 @@ export default {
     }
     .f-wall__tile-content {
       // padding: 2vmin;
+      width:100%;
+      height:100%;
+      position:relative;
     }
     .f-wall__tile-content__title{
+      position:absolute;
+      left:0;
+      bottom:0.5em;
       text-shadow: 0 0.1ch 0.1ch hsla(0, 0%, 0%, 0.35);
       font-style: italic;
       font-weight:500;

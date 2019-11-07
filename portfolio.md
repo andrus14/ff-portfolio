@@ -20,7 +20,7 @@
       title="This is important!" 
       image="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
       important 
-      target="This is important" 
+      target="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
       style="--spancols:2; --spanrows:2; --tint:0.5;"
     />
     <f-portfolio-tile 
@@ -35,7 +35,7 @@
       style="--spanrows:2; --tint:0.5"
     />
     <f-portfolio-tile 
-      title="This one has quiiiiite a long title" 
+      title="This one has quiiiiite a long title. It's even a bit too long. Eww..." 
       image="https://www.dropbox.com/s/hd1xb1skxlvakbp/05_designstem-concept_1.jpg?raw=1" 
       target="etc" 
       style="--tint:0.75"
