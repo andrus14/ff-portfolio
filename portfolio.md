@@ -7,9 +7,9 @@
 
 <center>
 
-  # Mott Gliver-Waarnook
+  # *Fredi von Fachwerk*
   
-  This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank">Fachwerk</a> framework as possible portfolio platform.
+  This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank"><var>Fachwerk</var></a> framework as possible portfolio platform.
 
 </center>
 
@@ -72,7 +72,7 @@
 
   <caption>Yo. Dark theme! How about that?</caption>
 
-  ## Mott Gliver-Waarnook
+  ## <var>Fredi von Fachwerk</var>
   
   This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank">Fachwerk</a> framework as possible portfolio platform.
 
@@ -131,7 +131,7 @@
 
   <caption>Example layout 2</caption>
 
-  ## Mott Gliver-Waarnook
+  ## Fredi von Fachwerk
   
   This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank">Fachwerk</a> framework as possible portfolio platform.
 
@@ -211,7 +211,7 @@
 
   <caption>Example layout 3. This is experimental.</caption>
 
-  ## ~Mott Gliver-Waarnook~
+  ## ~Fredi von Fachwerk~
       
   > ~This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank">Fachwerk</a> framework as possible portfolio platform.~
 

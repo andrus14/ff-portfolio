@@ -65,7 +65,7 @@ export default {
   >
     <div class="f-wall__tile-wrapper" v-on:click="goto(target)">
       <div :style="{'background-image': 'url('+image+')'}" class="f-wall__tile-bg"></div>
-      <div class="f-wall__tile-overlay" :style="{'opacity': 'var(--tint)'}"></div>
+      <div class="f-wall__tile-overlay"></div>
       <div class="f-wall__tile-content">
         <h4 class="f-wall__tile-content__title" :style="{'background-color': important ? 'var(--important)' : 'var(--wall-tile-title-background)'}">{{ title }}</h4>
 
@@ -94,9 +94,6 @@ export default {
     .f-wall__tile-wrapper > * {
       position:absolute;
     }
-    h4 {
-      color:var(--white);
-    }
     .f-wall__tile-bg {
       position:absolute;
       width:100%; height:100%; 
@@ -111,9 +108,10 @@ export default {
       width:100%; height:100%; 
       background:var(--wall-tile-overlay-color); 
       mix-blend-mode:multiply;
+      opacity: var(--tint);
+      transition: inherit;
     }
     .f-wall__tile-content {
-      // padding: 2vmin;
       width:100%;
       height:100%;
       position:relative;
@@ -126,14 +124,19 @@ export default {
       font-style: italic;
       font-weight:500;
       padding:0.75ch 1ch;
+      color:var(--white);
     }
     .f-wall__tile:hover {
         cursor: pointer;
         transition: all 0.5s ease-in-out;
     }
     .f-wall__tile:hover .f-wall__tile-bg {
-        transform: scale(1.05);
+        transform: scale(1.025);
         transition: inherit;
     }
+    .f-wall__tile:hover .f-wall__tile-overlay {
+      opacity: 0;
+      transition: inherit;
+  }
   `
 }
