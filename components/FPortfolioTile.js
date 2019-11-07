@@ -70,7 +70,7 @@ export default {
         <h4 class="f-wall__tile-content__title" :style="{'background-color': important ? 'var(--important)' : 'var(--wall-tile-title-background)'}">{{ title }}</h4>
 
         <f-modal v-if="isImage" :src="image">
-          <a style="position:absolute; z-index:5; width:100%; height:100%; background:hsla(30,0%,0%,0)">&nbsp;</a>
+          <div style="position:absolute; z-index:5; width:100%; height:100%; background:hsla(30,0%,0%,0)">&nbsp;</div>
         </f-modal>
       </div>
     </div>
