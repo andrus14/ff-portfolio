@@ -269,7 +269,7 @@
 
 
 | chapter: Example project pages
-| section: Project layout 1 
+| section: Project 1 
 | padding: 0;
 | rows: 80vh auto
 | cols: 1fr 2fr
@@ -337,7 +337,7 @@
 
 
 
-| section: Project layout 2
+| section: Project 2
 | padding: 0;
 | rows: 40vh auto
 | cols: 1fr 2fr
