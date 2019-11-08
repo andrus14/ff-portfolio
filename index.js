@@ -4,7 +4,7 @@ import { fachwerk } from "https://designstem.github.io/fachwerk/fachwerk.js";
 
 import FPortfolioWall from "./components/FPortfolioWall.js";
 import FPortfolioTile from "./components/FPortfolioTile.js";
-import DirtyStyleOverriderHack from "./components/DirtyStyleOverriderHack.js"
+import DirtyStyleOverriderHack from "./components/DirtyStyleOverriderHack.js";
 
 
 fachwerk({

@@ -4,54 +4,72 @@
 | height: 100vh
 | 1
 | 2
+| 3
 
 <center>
 
   # *Fredi von Fachwerk*
   
-  This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank"><var>Fachwerk</var></a> framework as possible portfolio platform.
+  This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank"><var>Fachwerk</var></a> framework as possible portfolio platform.<br>There are a couple of <var>special components</var> that help you present images separately or in a tiled grid.
 
 </center>
 
 -
 
 <f-portfolio-wall style="--height:100vh; --smallheight:1000px; --cols:3; --smallcols:2; ">
-    <f-portfolio-tile 
-      title="This is important!" 
-      image="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
-      important 
-      target="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
-      style="--spancols:2; --spanrows:2; --tint:0.5;"
-    />
-    <f-portfolio-tile 
-      title="The second one" 
-      target="Project number 2"
-      style="--tint:0.5;" 
-    />
-    <f-portfolio-tile 
-      title="Number 3" 
-      image="https://picsum.photos/id/1/400" 
-      target="etc" 
-      style="--spanrows:2; --tint:0.5"
-    />
-    <f-portfolio-tile 
-      title="This one has quiiiiite a long title. It's even a bit too long. Eww..." 
-      image="https://www.dropbox.com/s/hd1xb1skxlvakbp/05_designstem-concept_1.jpg?raw=1" 
-      target="etc" 
-      style="--tint:0.75"
-    />
-    <f-portfolio-tile 
-      title="Number 5" 
-      image="https://picsum.photos/id/1/400" 
-      target="etc" 
-    />
-    <f-portfolio-tile 
-      title="Number 6" 
-      target="etc" 
-      style="--spancols:1;"
-      important 
-    />
+  <f-portfolio-tile 
+    title="Opens a bigger image" 
+    image="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
+    important 
+    target="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
+    style="--spancols:2; --spanrows:2; --tint:0.5;"
+  />
+  <f-portfolio-tile 
+    title="Project one" 
+    target="Project one"
+    style="--tint:0.5;" 
+  />
+  <f-portfolio-tile 
+    title="Screenshot of Fachwerk" 
+    image="https://www.dropbox.com/s/4716b3who8d2jpp/fachwerk-screenshot.jpg?raw=1" 
+    target="https://www.dropbox.com/s/4716b3who8d2jpp/fachwerk-screenshot.jpg?raw=1" 
+    style="--spanrows:2; --tint:0.5"
+  />
+  <f-portfolio-tile 
+    title="Project 2 with longer name" 
+    image="https://www.dropbox.com/s/kg5r60dr037gs0r/00_background-sketches_3.jpg?raw=1" 
+    target="etc" 
+    style="--tint:0.75"
+  />
+  <f-portfolio-tile 
+    title="Another project" 
+    image="https://picsum.photos/id/1/400" 
+    target="etc" 
+  />
+  <f-portfolio-tile 
+    title="Zooms the image in" 
+    image="https://www.dropbox.com/s/62bhblw03dxospo/color-sphere.jpg?raw=1"
+    target="https://www.dropbox.com/s/62bhblw03dxospo/color-sphere.jpg?raw=1" 
+    style="--spancols:1;"
+    important 
+  />
 </f-portfolio-wall>
+
+-
+
+<center style="min-height:50vh;">
+
+  ### A tip
+
+  If you <var>click the tiles</var>, a bigger image opens in a modal window or you will navigate to project page with more information.
+  All the content comes from <var>Markdown</var> file (or files, if you prefer so). See, how to <a href="https://designstem.github.io/fachwerk/docs/#/formatting-text" target="_blank">format text</a>.
+
+  ### A pro tip
+
+  Click <kbd>alt</kbd>+<kbd>e</kbd> on your keyboard to see the actual content of this site. You may even want to edit it! ⌨ 
+
+
+</center>
 
 <csshack />
 
@@ -74,48 +92,49 @@
 
   ## <var>Fredi von Fachwerk</var>
   
-  This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank">Fachwerk</a> framework as possible portfolio platform.
+  Fachwerk has a few <var>themes</var> built-in and it is quite easy to adjust or overwrite (most of) the styles using <var>--css-variables</var> or other css techniques. 
 
 </center>
 
 -
 
 <f-portfolio-wall style="--height:100vh; --smallheight:1000px; --cols:3; --smallcols:2; ">
-    <f-portfolio-tile 
-      title="This is important!" 
-      image="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
-      important 
-      target="This is important" 
-      style="--spancols:2; --spanrows:2; --tint:0.5;"
-    />
-    <f-portfolio-tile 
-      title="The second one" 
-      target="Project number 2"
-      style="--tint:0.5;" 
-    />
-    <f-portfolio-tile 
-      title="Number 3" 
-      image="https://picsum.photos/id/1/400" 
-      target="etc" 
-      style="--spanrows:2; --tint:0.5"
-    />
-    <f-portfolio-tile 
-      title="This one has quiiiiite a long title" 
-      image="https://www.dropbox.com/s/hd1xb1skxlvakbp/05_designstem-concept_1.jpg?raw=1" 
-      target="etc" 
-      style="--tint:0.75"
-    />
-    <f-portfolio-tile 
-      title="Number 5" 
-      image="https://picsum.photos/id/1/400" 
-      target="etc" 
-    />
-    <f-portfolio-tile 
-      title="Number 6" 
-      target="etc" 
-      style="--spancols:1;"
-      important 
-    />
+  <f-portfolio-tile 
+    title="If a tile is marked as important, the title is highlighted" 
+    image="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
+    important 
+    target="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
+    style="--spancols:2; --spanrows:2; --tint:0.5;"
+  />
+  <f-portfolio-tile 
+    title="Project one" 
+    target="Project one"
+    style="--tint:0.5;" 
+  />
+  <f-portfolio-tile 
+    title="Screenshot of Fachwerk" 
+    image="https://www.dropbox.com/s/4716b3who8d2jpp/fachwerk-screenshot.jpg?raw=1" 
+    target="https://www.dropbox.com/s/4716b3who8d2jpp/fachwerk-screenshot.jpg?raw=1" 
+    style="--spanrows:2; --tint:0.5"
+  />
+  <f-portfolio-tile 
+    title="Project 2 with longer name" 
+    image="https://www.dropbox.com/s/kg5r60dr037gs0r/00_background-sketches_3.jpg?raw=1" 
+    target="etc" 
+    style="--tint:0.75"
+  />
+  <f-portfolio-tile 
+    title="Another project" 
+    image="https://picsum.photos/id/1/400" 
+    target="etc" 
+  />
+  <f-portfolio-tile 
+    title="Zooms the image in" 
+    image="https://www.dropbox.com/s/62bhblw03dxospo/color-sphere.jpg?raw=1"
+    target="https://www.dropbox.com/s/62bhblw03dxospo/color-sphere.jpg?raw=1" 
+    style="--spancols:1;"
+    important 
+  />
 </f-portfolio-wall>
 
 ---
@@ -131,9 +150,16 @@
 
   <caption>Example layout 2</caption>
 
-  ## Fredi von Fachwerk
+  ## Fredi <sup><small><small>von</small></small></sup> Fachwerk
   
-  This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank">Fachwerk</a> framework as possible portfolio platform.
+  You can adjust the <var>layout of image galleries</var> with some easy-to-use variables to define columns, rows, colum-spans, height etc.
+
+  Also, with Fachwerk, it is quite easy to change the whole <var>page layout</var>, without being a html, css or javascript ninja. 
+  <a href="https://designstem.github.io/fachwerk/docs/#/page-layout-and-grid" target="_blank">Find out, how!</a>
+  
+  &nbsp;
+
+  > Although, being a ninja always helps, of course. 🐱‍👤
 
 </section>
 
@@ -145,7 +171,7 @@
       image="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
       important 
       target="This is important" 
-      style="--spancols:2; --spanrows:2; --tint:0.5;"
+      style="--tint:0.5;"
     />
     <f-portfolio-tile 
       title="The second one" 
@@ -156,7 +182,7 @@
       title="Number 3" 
       image="https://picsum.photos/id/1/400" 
       target="etc" 
-      style="--spanrows:2; --tint:0.5"
+      style="--tint:0.5"
     />
     <f-portfolio-tile 
       title="This one has quiiiiite a long title" 
@@ -172,7 +198,7 @@
     <f-portfolio-tile 
       title="Number 6" 
       target="etc" 
-      style="--spancols:1;"
+      style=""
       important 
     />
 </f-portfolio-wall>
@@ -213,7 +239,7 @@
 
   ## ~Fredi von Fachwerk~
       
-  > ~This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank">Fachwerk</a> framework as possible portfolio platform.~
+  > ~Here we try another font and we use "normal" content inside of the image grid. And it works! *...well, kind of...* 😕~
 
   </section>
   <f-portfolio-tile 
@@ -243,40 +269,59 @@
 
 
 | chapter: Example project pages
-| section: Simple text and image
-| height: 100vh
-| 1 2
-| 4 3
+| section: Project 1
+| padding: 0;
+| rows: 80vh auto
+| cols: 1fr 2fr
+| 1 1 
+| 2 3 
 
-## This is my project where...
 
-**Text is as important as image**. Here is quite a lot of it. 
+<f-portfolio-tile 
+    title="A project with hero image" 
+    style="height:100%; --tint:0.5;"
+    hero
+    image="https://www.dropbox.com/s/62bhblw03dxospo/color-sphere.jpg?raw=1"
+/>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam augue tellus, id euismod metus luctus eu. Nunc congue porta augue, vel egestas diam dapibus sit amet. Morbi dapibus malesuada sem quis suscipit. Suspendisse vehicula purus quis odio auctor, et convallis odio molestie. Nunc id mollis lectus. Morbi rutrum vestibulum urna id lacinia. Mauris tincidunt molestie arcu ac aliquam. Praesent lacus augue, suscipit tristique quam quis, finibus blandit massa.
-
-### Hey, look, a title!
-
-Cras sed consequat felis. Curabitur rhoncus dolor massa, vel pharetra urna placerat sit amet. Donec magna lacus, sodales ac rhoncus aliquam, dictum sed tortor. Phasellus est elit, egestas at metus nec, sodales fermentum massa. Phasellus eu odio eget lorem scelerisque blandit vitae id massa. Curabitur congue vitae augue ut aliquet. Pellentesque feugiat lobortis purus ac tristique. Cras fringilla nisl ut dictum malesuada. Nulla ac ultricies leo. Ut iaculis lectus sit amet venenatis vestibulum. Proin pharetra tincidunt neque ac hendrerit. Aliquam quis purus eu sem venenatis dignissim at vitae sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
--
-
-<f-image src="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" />
 
 -
 
-## Let's flip the image and text
+<section>
+  
+  Ok, now this would be a nice place to tell people a little about my project. Isn't it? 
 
-**Text is as important as image**. Here is quite a lot of it. 
+  #### About my project
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam augue tellus, id euismod metus luctus eu. Nunc congue porta augue, vel egestas diam dapibus sit amet. Morbi dapibus malesuada sem quis suscipit. Suspendisse vehicula purus quis odio auctor, et convallis odio molestie. Nunc id mollis lectus. Morbi rutrum vestibulum urna id lacinia. Mauris tincidunt molestie arcu ac aliquam. Praesent lacus augue, suscipit tristique quam quis, finibus blandit massa.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, laboriosam. Deserunt minima quisquam, ratione ullam itaque alias laborum fugiat repudiandae, corrupti quae ut laudantium doloremque odit officia unde maiores ex!
 
-### Hey, look, a title!
+  &nbsp;
 
-Cras sed consequat felis. Curabitur rhoncus dolor massa, vel pharetra urna placerat sit amet. Donec magna lacus, sodales ac rhoncus aliquam, dictum sed tortor. Phasellus est elit, egestas at metus nec, sodales fermentum massa. Phasellus eu odio eget lorem scelerisque blandit vitae id massa. Curabitur congue vitae augue ut aliquet. Pellentesque feugiat lobortis purus ac tristique. Cras fringilla nisl ut dictum malesuada. Nulla ac ultricies leo. Ut iaculis lectus sit amet venenatis vestibulum. Proin pharetra tincidunt neque ac hendrerit. Aliquam quis purus eu sem venenatis dignissim at vitae sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  <small>
+
+  `Link` <a href="https://designstem.github.io/fachwerk" target="_blank">https://designstem.github.io/fachwerk</a>
+  `Client` Fachwerk Machinerwerk Gmbh
+  `Year` 2018
+  `Metadata` just add something
+  
+  </small> 
+
+</section>
 
 -
 
-<f-image src="https://picsum.photos/id/1/800" />
+<section>
+
+  <f-image src="https://www.dropbox.com/s/l7u7x00kr12hthd/00_background-dinner.jpg?raw=1" />
+
+  <small>*Here is just a simple image. You cant click it. This is Fachwerks `<f-image />` component.*</small>
+
+
+  <f-image src="https://www.dropbox.com/s/kg5r60dr037gs0r/00_background-sketches_3.jpg?raw=1" />
+
+  <small>*Let's add another image, so it looks more like a portfolio project or something. This is how we made it happen. We are soo geniuses.*</small>
+
+</section>
 
 
 <!-- <div style="padding:3vmin;">

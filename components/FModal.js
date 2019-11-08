@@ -36,7 +36,7 @@ export default {
 
 
       <div @click="open = false" style="position:fixed; top:0; left:0; width:100%; height:100%; background:hsla(0,0%,0%,0.8); z-index:-1;"></div>
-      <f-image :src="src" style="--image-size:contain; margin:3vmin; height:93vh; pointer-events: none;" />
+      <f-image :src="src" style="--image-size:contain; height:100vh; pointer-events: none;" />
 
       <!-- <f-fetch v-if="src" :src="src" v-slot="{ value: content }">
         <f-content type="document" theme="light" style="--content-padding: var(--base3)" :content="content" />
