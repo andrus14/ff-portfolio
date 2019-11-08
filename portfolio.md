@@ -26,7 +26,7 @@
   />
   <f-portfolio-tile 
     title="Project one" 
-    target="Project one"
+    target="Project 1"
     style="--tint:0.5;" 
   />
   <f-portfolio-tile 
@@ -38,7 +38,7 @@
   <f-portfolio-tile 
     title="Project 2 with longer name" 
     image="https://www.dropbox.com/s/kg5r60dr037gs0r/00_background-sketches_3.jpg?raw=1" 
-    target="etc" 
+    target="Project 2" 
     style="--tint:0.75"
   />
   <f-portfolio-tile 
@@ -269,7 +269,7 @@
 
 
 | chapter: Example project pages
-| section: Project 1
+| section: Project layout 1 
 | padding: 0;
 | rows: 80vh auto
 | cols: 1fr 2fr
@@ -293,6 +293,8 @@
 
   #### About my project
 
+  This layout has a big hero image, text and some additional images. 
+
   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, laboriosam. Deserunt minima quisquam, ratione ullam itaque alias laborum fugiat repudiandae, corrupti quae ut laudantium doloremque odit officia unde maiores ex!
 
   &nbsp;
@@ -305,6 +307,10 @@
   `Metadata` just add something
   
   </small> 
+
+  &nbsp;
+
+  <f-next-button title="Next: project number 2" />
 
 </section>
 
@@ -323,46 +329,146 @@
 
 </section>
 
-
-<!-- <div style="padding:3vmin;">
-      <h5>Playground</h5>
-      <f-scene responsive>
-        <f-hex-pattern rows="6" cols="6" step="0.5">
-          <f-hexagon :rotation="get('boo', 0)" :scale="get('woo', 1)" />
-        </f-hex-pattern>
-      </f-scene>
-      <br />
-      <f-slider set="boo" to="180" />
-      <br />
-      <f-slider set="woo" from="0.2" to="2" value="1" />
-    </div> -->
-
----
-
-
-
-
-| section: Project number 2
-| height: 100vh
-| theme: blue
-
-<center>
-
-# The second project, maan
-
-</center>
-
 ---
 
 
 
 
 
-| section: etc
+
+
+| section: Project layout 2
+| padding: 0;
+| rows: 40vh auto
+| cols: 1fr 2fr
+| 1 1 
+| 2 3 
+
+
+<f-portfolio-tile 
+    title="Project 2: Smaller hero image and gallery" 
+    style="height:100%; --tint:0.5;"
+    hero
+    image="https://www.dropbox.com/s/62bhblw03dxospo/color-sphere.jpg?raw=1"
+/>
+
+
+-
+
+<section>
+  
+  This one has a clickable/zoomable gallery instead of just images as the previous one was.
+
+  #### About my project
+
+  This layout has a big hero image, text and some additional images. 
+
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, laboriosam. Deserunt minima quisquam, ratione ullam itaque alias laborum fugiat repudiandae, corrupti quae ut laudantium doloremque odit officia unde maiores ex!
+
+  &nbsp;
+
+  <small>
+
+  `Link` <a href="https://designstem.github.io/fachwerk" target="_blank">https://designstem.github.io/fachwerk</a>
+  `Client` Fachwerk Machinerwerk Gmbh
+  `Year` 2018
+  `Metadata` just add something
+  
+  </small> 
+
+  &nbsp;
+
+  <f-next-button title="Next: project number 3" />
+
+</section>
+
+-
+
+<section>
+
+  <f-portfolio-wall style="--height:760px; --smallheight:auto; --cols:2; --smallcols:2;">
+  <f-portfolio-tile 
+    title="Opens a bigger image" 
+    image="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1"  
+    target="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
+    style="--tint:0.5;"
+  />
+  <f-portfolio-tile 
+    title="Screenshot of Fachwerk" 
+    image="https://www.dropbox.com/s/4716b3who8d2jpp/fachwerk-screenshot.jpg?raw=1" 
+    target="https://www.dropbox.com/s/4716b3who8d2jpp/fachwerk-screenshot.jpg?raw=1" 
+    style="--tint:0.5"
+  />
+  <f-portfolio-tile 
+    title="Project 2 with longer name" 
+    image="https://www.dropbox.com/s/kg5r60dr037gs0r/00_background-sketches_3.jpg?raw=1" 
+    target="https://www.dropbox.com/s/kg5r60dr037gs0r/00_background-sketches_3.jpg?raw=1" 
+    style="--tint:0.75"
+  />
+  <f-portfolio-tile 
+    title="Zooms the image in" 
+    image="https://www.dropbox.com/s/62bhblw03dxospo/color-sphere.jpg?raw=1"
+    target="https://www.dropbox.com/s/62bhblw03dxospo/color-sphere.jpg?raw=1" 
+    style="" 
+  />
+</f-portfolio-wall>
+
+</section>
+
+<csshack />
+
+---
+
+
+
+
+
+| section: Project 3
 | height: 100vh
+| background: https://www.dropbox.com/s/62bhblw03dxospo/color-sphere.jpg?raw=1
+| tint: 0.7
+| theme: dark
+| rows: 40vh auto
+| 1 1
+| 2 3
 
-<center>
 
-  # And so on
+-
 
-</center>
+## *Project with big back&shy;ground*
+
+And text with description goes here. I don't know if we need such an option... But here it is. To the right we put some more related images, you can zoom into.
+
+&nbsp;
+
+<f-next-button />
+
+-
+
+<f-portfolio-wall style="--height:100%; --smallheight:auto; --cols:2; --smallcols:2;">
+  <f-portfolio-tile 
+    title="Opens a bigger image" 
+    image="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1"  
+    target="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
+    style="--tint:0.5;"
+  />
+  <f-portfolio-tile 
+    title="Screenshot of Fachwerk" 
+    image="https://www.dropbox.com/s/4716b3who8d2jpp/fachwerk-screenshot.jpg?raw=1" 
+    target="https://www.dropbox.com/s/4716b3who8d2jpp/fachwerk-screenshot.jpg?raw=1" 
+    style="--tint:0.5"
+  />
+  <f-portfolio-tile 
+    title="Project 2 with longer name" 
+    image="https://www.dropbox.com/s/kg5r60dr037gs0r/00_background-sketches_3.jpg?raw=1" 
+    target="https://www.dropbox.com/s/kg5r60dr037gs0r/00_background-sketches_3.jpg?raw=1" 
+    style="--tint:0.75"
+  />
+  <f-portfolio-tile 
+    title="Zooms the image in" 
+    image="https://www.dropbox.com/s/62bhblw03dxospo/color-sphere.jpg?raw=1"
+    target="https://www.dropbox.com/s/62bhblw03dxospo/color-sphere.jpg?raw=1" 
+    style="" 
+    important
+  />
+</f-portfolio-wall>
