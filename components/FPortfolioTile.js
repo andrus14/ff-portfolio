@@ -15,7 +15,8 @@ export default {
   },
   data: () => ({
     isImage: false,
-    hasTarget: false
+    hasTarget: false,
+    
   }),
   components: {
     FModal: FModal,
@@ -71,7 +72,7 @@ export default {
   template: `<div 
     class="f-wall__tile" :class="hero ? 'hero' : ''"
     :style="hasTarget ? {'cursor': 'pointer'} : {'cursor':'initial'}"
-    v-responsive="{ 'f-wall__tile--small' : el => el.width <= 800, 'f-wall__tile--tiny' : el => el.width <= 600 }"
+    v-responsive="{ 'f-wall__tile--small' : el => el.width <= 800, 'f-wall__tile--tiny' : el => el.width <= 400 }"
   >
     <div class="f-wall__tile-wrapper" v-on:click="goto(target)">
       <div :style="{'background-image': 'url('+image+')'}" class="f-wall__tile-bg"></div>

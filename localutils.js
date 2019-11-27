@@ -66,6 +66,7 @@
 //   }
 // }
 
+
 export const ResponsiveDirective = {
   inserted(el, conds) {
     if (typeof process === "undefined" || !process.server) {
@@ -79,7 +80,6 @@ export const ResponsiveDirective = {
           }
         }
       }, 200)
-
       const observer = new ResizeObserver(handleResize)
       observer.observe(el)
     }

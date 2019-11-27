@@ -16,12 +16,14 @@
 
 -
 
+<!-- https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1 -->
+
 <f-portfolio-wall style="--height:100vh; --smallheight:1000px; --cols:3; --smallcols:2; ">
   <f-portfolio-tile 
     title="Opens a bigger image" 
-    image="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
+    image="https://kig17.files.wordpress.com/2019/11/00_background-sketches_2.jpg?w=1000" 
     important 
-    target="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
+    target="https://imgur.com/rJUm8Ee.jpg" 
     style="--spancols:2; --spanrows:2; --tint:0.5;"
   />
   <f-portfolio-tile 

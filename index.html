@@ -16,6 +16,34 @@
       background: #f2f1f2;
     }
     .menu {border-right:1px solid var(--lightgray)}
+
+    .main-header{
+      position:static; 
+      width:100%; 
+      display:flex; 
+      justify-content:space-between; 
+      align-items:center; 
+      padding:1vh 1vw; 
+      top:0; 
+      background:var(--background); 
+      box-shadow:0 1px 3px 0 hsla(0,0%,0%,0.25); 
+      height:8vh;
+    }
+    .main-header__nav{
+      flex:1;
+      display:flex;
+      justify-content:space-around;
+    }
+    .main-header__nav>span {
+      font-weight: bold;
+      color:var(--secondary);
+      cursor:pointer;
+      transition: all 0.5s ease-in-out;
+    }
+    .main-header__nav>span:hover {
+      color:var(--blue);
+      cursor:pointer;
+    }
   </style>
 </head>
 <body>
