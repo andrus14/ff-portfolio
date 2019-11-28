@@ -68,6 +68,10 @@ export default {
       default: "1",
       description: "Span rows"
     },
+    "--image-position": {
+      default: "50% 50%",
+      description: "Image position"
+    },
   },
   template: `<div 
     class="f-wall__tile" :class="hero ? 'hero' : ''"
@@ -75,7 +79,7 @@ export default {
     v-responsive="{ 'f-wall__tile--small' : el => el.width <= 800, 'f-wall__tile--tiny' : el => el.width <= 400 }"
   >
     <div class="f-wall__tile-wrapper" v-on:click="goto(target)">
-      <div :style="{'background-image': 'url('+image+')'}" class="f-wall__tile-bg"></div>
+      <div :style="{'background-image': 'url('+image+')', 'background-position': 'var(--image-position)'}" class="f-wall__tile-bg"></div>
       <div class="f-wall__tile-overlay"></div>
       
       <h4 class="f-wall__tile-title" :style="{'background-color': important ? 'var(--important)' : 'var(--wall-tile-title-background)'}">{{ title }}</h4>

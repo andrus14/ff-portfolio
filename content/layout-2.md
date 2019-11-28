@@ -35,7 +35,7 @@
     title="Goes to project page" 
     image="https://res.cloudinary.com/dt8r2uxga/image/upload/w_600/v1574947419/novomesto_hplrsm.jpg"
     target="Project 1"
-    style="--tint:0.2;" 
+    style="--tint:0.2; --image-position:100% 50%;" 
   />
   <f-portfolio-tile 
     title="Screenshot of Fachwerk" 
