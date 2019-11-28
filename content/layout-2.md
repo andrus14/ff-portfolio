@@ -26,9 +26,9 @@
 <f-portfolio-wall style="--height:90vh; --smallheight:1000px; --cols:3; --smallcols:2; --tinycols:1; ">
     <f-portfolio-tile 
     title="Opens a bigger image" 
-    image="https://kig17.files.wordpress.com/2019/11/00_background-sketches_2.jpg?w=1000" 
+    image="https://res.cloudinary.com/dt8r2uxga/image/upload/w_600/v1574950786/00_background-sketches_1_suxefs.jpg" 
     important 
-    target="https://kig17.files.wordpress.com/2019/11/00_background-sketches_2.jpg?w=1900" 
+    target="https://res.cloudinary.com/dt8r2uxga/image/upload/h_1000,q_auto/v1574950786/00_background-sketches_1_suxefs.jpg" 
     style="--tint:0.2;"
   />
   <f-portfolio-tile 

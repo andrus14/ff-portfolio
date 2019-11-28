@@ -73,8 +73,8 @@ new Vue({
       <h3 style="margin:0; cursor:pointer;" v-on:click="goto('Example layout 1')"><i>Ann Täpp</i></h3>
       <nav class="main-header__nav">
         <span v-on:click="goto('Example layout 1 dark')">ABOUT</span>
-        <span v-on:click="goto('Example layout 2')">THE OTHER</span>
-        <span v-on:click="goto('Example layout 2')">ONE MORE</span>
+        <span v-on:click="goto('Project 1')">THE OTHER</span>
+        <span v-on:click="goto('Project 2')">ONE MORE</span>
       </nav>  
     </div>
   
