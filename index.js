@@ -8,7 +8,7 @@
 
 
 // fachwerk({
-//   title: "Oliver Maaker",
+//   title: "Sample portfolio",
 //   components: {
 //     FPortfolioTile: FPortfolioTile,
 //     FPortfolioWall: FPortfolioWall,
@@ -78,8 +78,17 @@ new Vue({
       </nav>  
     </div>
   
-    <f-fetch src="./portfolio.md" v-slot="{ value: content }">
-      <f-content-editor type="slides" edit="none" typebutton="false" title="Exampleportfolio" :content="content" />
+    <f-fetch :src="[
+        'content/layout-1.md',
+        'content/layout-1--dark.md',
+        'content/layout-2.md',
+        'content/layout-3.md',
+        'content/project-1.md',
+        'content/project-2.md',
+        'content/project-3.md',
+
+      ]" v-slot="{ value: content }">
+      <f-content-editor type="slides" edit="none" typebutton="false" title="Sampleportfolio" :content="content" />
     </f-fetch>
 
     

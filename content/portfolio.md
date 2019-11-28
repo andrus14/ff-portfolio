@@ -1,3 +1,4 @@
+
 | chapter: Example layouts
 | section: Example layout 1
 | rows: 50vh auto
@@ -6,11 +7,12 @@
 | 2
 | 3
 
+
 <center>
 
   # *Fredi von Fachwerk*
   
-  This is a small portfolio-like mockup-site to test out <a href="https://designstem.github.io/fachwerk/" target="_blank"><var>Fachwerk</var></a> framework as possible portfolio platform.<br>There are a couple of <var>special components</var> that help you present images separately or in a tiled grid.
+  This is a **small** portfolio-like <b>mockup-site</b> to test out <a href="https://designstem.github.io/fachwerk/" target="_blank"><var>Fachwerk</var></a> framework as possible portfolio platform.<br>There are a couple of <var>special components</var> that help you present images separately or in a tiled grid.
 
 </center>
 
@@ -23,7 +25,7 @@
     title="Opens a bigger image" 
     image="https://kig17.files.wordpress.com/2019/11/00_background-sketches_2.jpg?w=1000" 
     important 
-    target="https://imgur.com/rJUm8Ee.jpg" 
+    target="Example layout 1 dark" 
     style="--spancols:2; --spanrows:2; --tint:0.5;"
   />
   <f-portfolio-tile 
@@ -101,6 +103,7 @@
 -
 
 <f-portfolio-wall style="--height:100vh; --smallheight:1000px; --cols:3; --smallcols:2; ">
+  
   <f-portfolio-tile 
     title="If a tile is marked as important, the title is highlighted" 
     image="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
@@ -108,6 +111,7 @@
     target="https://www.dropbox.com/s/qijb0j75lu48q85/00_background-turntable.jpg?raw=1" 
     style="--spancols:2; --spanrows:2; --tint:0.5;"
   />
+
   <f-portfolio-tile 
     title="Project one" 
     target="Project one"
@@ -213,8 +217,9 @@
 
 
 | section: Example layout 3
-| padding: 50px 0 0 0
-| menu: show
+| padding: 0
+| background: hsl(48,96%,83%)
+
 
 <f-portfolio-wall style="--height:100vh; --smallheight:1000px; --cols:3; --smallcols:2; --tinycols:1; ">
   <f-portfolio-tile 
@@ -474,3 +479,18 @@ And text with description goes here. I don't know if we need such an option... B
     important
   />
 </f-portfolio-wall>
+
+
+---
+
+
+
+| section: Embedded content
+
+<f-fetch src="project-embedded.md" v-slot="{ value }">
+  <f-content
+    :content="value"
+    type="slides"
+    style="--content-padding: 0;"
+  />
+</f-fetch>

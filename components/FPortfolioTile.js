@@ -57,7 +57,7 @@ export default {
   // },
   cssprops: {
     "--tint": {
-      default: "0.33",
+      default: "0.25",
       description: "Define overlay opacity"
     },
     "--spancols": {
@@ -84,7 +84,7 @@ export default {
         <f-zoom-icon />
       </div>
 
-      <f-modal v-if="isImage" :src="image" style="width:100%; height:100%;">
+      <f-modal v-if="isImage" :src="target" style="width:100%; height:100%;">
         <div style="position:absolute; z-index:5; width:100%; height:100%; background:hsla(30,0%,0%,0)">&nbsp;</div>
       </f-modal>
 
