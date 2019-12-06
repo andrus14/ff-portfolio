@@ -34,8 +34,8 @@
   />
   <f-portfolio-tile 
     title="Screenshot of Fachwerk" 
-    image="https://res.cloudinary.com/dt8r2uxga/image/upload/w_600/v1574947423/fachwerk_iyemq5.jpg" 
-    target="https://res.cloudinary.com/dt8r2uxga/image/upload/v1574947423/fachwerk_iyemq5.jpg" 
+    image="https://res.cloudinary.com/dt8r2uxga/image/upload/w_600,q_auto/v1574962682/fachwerk-screenshot_rb2oud.jpg" 
+    target="https://res.cloudinary.com/dt8r2uxga/image/upload/h_1080,q_auto/v1574962682/fachwerk-screenshot_rb2oud.jpg" 
     style="--spanrows:2; --tint:0.5"
   />
   <f-portfolio-tile 
